@@ -7,6 +7,7 @@ import beer from "./assets/beer.png";
 import nuts from "./assets/nuts.png";
 import fruity from "./assets/fruity.png";
 import tequila from "./assets/tequila.png";
+import schweff from "./assets/schweff.png";
 
 function App() {
   const [timeLeftTilPubGarden, setTimeLeftTilPubGarden] = useState(
@@ -44,107 +45,76 @@ function App() {
             <img src={alMurray} height="75px" width="75px"></img>
           </div>
           <div>
-            <img src={beer} height="75px" width="75px"></img>
-          </div>
-          <div>
-            {" "}
-            <img src={beer} height="75px" width="75px"></img>
-          </div>
-          <div>
             <img src={alMurray} height="75px" width="75px"></img>
           </div>
           <div>
             {" "}
-            <img src={nuts} height="75px" width="75px"></img>
+            <img src={alMurray} height="75px" width="75px"></img>
+          </div>
+          <div>
+            <img src={beer} height="75px" width="75px"></img>
           </div>
           <div>
             {" "}
-            <img src={fruity} height="75px" width="75px" />
+            <img src={beer} height="75px" width="75px"></img>
           </div>
           <div>
-            <img src={tequila} height="75px" width="75px" />
+            {" "}
+            <img src={nuts} height="75px" width="75px" />
           </div>
-        </div>
+          <div>
+            <img src={nuts} height="75px" width="75px" />
+          </div>
 
-        <div className="leaf leaf1">
+          <div>
+            {" "}
+            <img src={tequila} height="75px" width="75px"></img>
+          </div>
+
           <div>
             {" "}
             <img src={tequila} height="75px" width="75px"></img>
           </div>
           <div>
-            <img
-              src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png"
-              height="75px"
-              width="75px"
-            ></img>
+            <img src={fruity} height="75px" width="75px"></img>
           </div>
           <div>
             {" "}
+            <img src={fruity} height="75px" width="75px"></img>
+          </div>
+          <div>
+            {" "}
+            <img src={schweff} height="75px" width="75px" />
+          </div>
+          <div>
+            <img src={beer} height="75px" width="75px" />
+          </div>
+
+          <div>
+            {" "}
+            <img src={schweff} height="75px" width="75px"></img>
+          </div>
+          <div>
             <img src={beer} height="75px" width="75px"></img>
           </div>
-          <div>
-            <img src={alMurray} height="75px" width="75px"></img>
-          </div>
-          <div>
-            {" "}
-            <img src={nuts} height="75px" width="75px"></img>
-          </div>
-          <div>
-            {" "}
-            <img src={fruity} height="75px" width="75px" />
-          </div>
-          <div>
-            <img src={tequila} height="75px" width="75px" />
-          </div>
         </div>
-
-        <div className="leaf leaf2">
+        <div className="textstuff">
           <div>
-            {" "}
-            <img src={tequila} height="75px" width="75px"></img>
+            <h1>Time until pub garden</h1>
+            {timeLeftTilPubGarden.days}D {timeLeftTilPubGarden.hours}H{" "}
+            {timeLeftTilPubGarden.minutes}M {timeLeftTilPubGarden.seconds}S
           </div>
           <div>
-            <img
-              src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png"
-              height="75px"
-              width="75px"
-            ></img>
+            <h1>Time until pub</h1>
+            {timeLeftTilPub.days}D {timeLeftTilPub.hours}H{" "}
+            {timeLeftTilPub.minutes}M {timeLeftTilPub.seconds}S
           </div>
           <div>
-            {" "}
-            <img src={beer} height="75px" width="75px"></img>
+            <h1>Time until total fuckery</h1>
+            {timeLeftTilTotalFuckery.days}D {timeLeftTilTotalFuckery.hours} H{" "}
+            {timeLeftTilTotalFuckery.minutes}M {timeLeftTilTotalFuckery.seconds}
+            S
           </div>
-          <div>
-            <img src={alMurray} height="75px" width="75px"></img>
-          </div>
-
-          <div>
-            {" "}
-            <img src={nuts} height="75px" width="75px"></img>
-          </div>
-          <div>
-            {" "}
-            <img src={fruity} height="75px" width="75px" />
-          </div>
-          <div>
-            <img src={tequila} height="75px" width="75px" />
-          </div>
-        </div>
-
-        <div>
-          <h1>Time until pub garden</h1>
-          {timeLeftTilPubGarden.days}:{timeLeftTilPubGarden.hours}:
-          {timeLeftTilPubGarden.minutes}:{timeLeftTilPubGarden.seconds}
-        </div>
-        <div>
-          <h1>Time until pub</h1>
-          {timeLeftTilPub.days}:{timeLeftTilPub.hours}:{timeLeftTilPub.minutes}:
-          {timeLeftTilPub.seconds}
-        </div>
-        <div>
-          <h1>Time until total fuckery</h1>
-          {timeLeftTilTotalFuckery.days}:{timeLeftTilTotalFuckery.hours}:
-          {timeLeftTilTotalFuckery.minutes}:{timeLeftTilTotalFuckery.seconds}
         </div>
       </section>
     </div>

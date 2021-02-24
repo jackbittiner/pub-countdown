@@ -34,7 +34,7 @@ section {
 .leaf div:nth-child(3) {
   left: 10%;
   animation: fall 20s linear infinite;
-  animation-delay: -7s;
+  animation-delay: -5s;
 }
 .leaf div:nth-child(4) {
   left: 50%;
@@ -55,6 +55,54 @@ section {
   left: 90%;
   animation: fall 15s linear infinite;
   animation-delay: -4s;
+}
+
+.leaf div:nth-child(8) {
+  left: 60%;
+  animation: fall 15s linear infinite;
+  animation-delay: -4s;
+}
+
+.leaf div:nth-child(9) {
+  left: 25%;
+  animation: fall 12s linear infinite;
+  animation-delay: -4s;
+}
+
+.leaf div:nth-child(10) {
+  left: 5%;
+  animation: fall 22s linear infinite;
+  animation-delay: -2s;
+}
+
+.leaf div:nth-child(11) {
+  left: 94%;
+  animation: fall 14s linear infinite;
+  animation-delay: -9s;
+}
+
+.leaf div:nth-child(12) {
+  left: 29%;
+  animation: fall 18s linear infinite;
+  animation-delay: -10s;
+}
+
+.leaf div:nth-child(13) {
+  left: 38%;
+  animation: fall 11s linear infinite;
+  animation-delay: -7s;
+}
+
+.leaf div:nth-child(14) {
+  left: 63%;
+  animation: fall 10s linear infinite;
+  animation-delay: -2s;
+}
+
+.leaf div:nth-child(15) {
+  left: 14%;
+  animation: fall 17s linear infinite;
+  animation-delay: -14s;
 }
 
 @keyframes fall {
@@ -81,17 +129,12 @@ section {
     transform: translateX (-20px) rotate(225deg);
   }
 }
-.leaf1 {
-  /* transform: rotateX(180deg); */
-}
-h2 {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  font-family: "Courgette", cursive;
-  font-size: 4em;
+
+.textstuff {
+  color: white;
   text-align: center;
-  transform: translate;
-  color: #fff;
-  transform: translateY (-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
