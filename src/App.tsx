@@ -98,20 +98,20 @@ function App() {
             <img src={beer} height="75px" width="75px"></img>
           </div>
         </div>
-        <div className="textstuff">
-          <div>
-            <h1>Time until pub garden</h1>
+        <div className="time-to">
+          <h1>Time until pub garden</h1>
+          <div className="time">
             {timeLeftTilPubGarden.days}D {timeLeftTilPubGarden.hours}H{" "}
             {timeLeftTilPubGarden.minutes}M {timeLeftTilPubGarden.seconds}S
           </div>
-          <div>
-            <h1>Time until pub</h1>
+          <h1>Time until pub</h1>
+          <div className="time">
             {timeLeftTilPub.days}D {timeLeftTilPub.hours}H{" "}
             {timeLeftTilPub.minutes}M {timeLeftTilPub.seconds}S
           </div>
-          <div>
-            <h1>Time until total fuckery</h1>
-            {timeLeftTilTotalFuckery.days}D {timeLeftTilTotalFuckery.hours} H{" "}
+          <h1>Time until total fuckery</h1>
+          <div className="time">
+            {timeLeftTilTotalFuckery.days}D {timeLeftTilTotalFuckery.hours}H{" "}
             {timeLeftTilTotalFuckery.minutes}M {timeLeftTilTotalFuckery.seconds}
             S
           </div>
