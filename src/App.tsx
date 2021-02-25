@@ -9,7 +9,11 @@ import fruity from "./assets/fruity.png";
 import tequila from "./assets/tequila.png";
 import schweff from "./assets/schweff.png";
 
+import ReactGA from "react-ga";
+
 function App() {
+  ReactGA.initialize("UA-190609321-1");
+
   const [timeLeftTilPubGarden, setTimeLeftTilPubGarden] = useState(
     calculateTimeLeft(new Date(), new Date("2021-04-12T09:00:00.000Z"))
   );
