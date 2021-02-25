@@ -119,12 +119,6 @@ section {
   animation-delay: -14s;
 }
 
-.leaf div:nth-child(17) {
-  left: 14%;
-  animation: fall 17s linear infinite;
-  animation-delay: -14s;
-}
-
 .leaf div:nth-child(18) {
   left: 14%;
   animation: fall 17s linear infinite;
@@ -132,6 +126,12 @@ section {
 }
 
 .leaf div:nth-child(19) {
+  left: 14%;
+  animation: fall 17s linear infinite;
+  animation-delay: -14s;
+}
+
+.leaf div:nth-child(20) {
   left: 14%;
   animation: fall 17s linear infinite;
   animation-delay: -14s;
