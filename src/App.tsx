@@ -8,6 +8,7 @@ import nuts from "./assets/nuts.png";
 import fruity from "./assets/fruity.png";
 import tequila from "./assets/tequila.png";
 import schweff from "./assets/schweff.png";
+import scampiFries from "./assets/scampi-fries.png"
 
 import ReactGA from "react-ga";
 
@@ -93,7 +94,22 @@ function App() {
           <div>
             <img src={beer} height="75px" width="75px" />
           </div>
-
+          <div>
+            {" "}
+            <img src={scampiFries} height="75px" width="75px"></img>
+          </div>
+          <div>
+            {" "}
+            <img src={scampiFries} height="75px" width="75px"></img>
+          </div>
+          <div>
+            {" "}
+            <img src={scampiFries} height="75px" width="75px"></img>
+          </div>
+          <div>
+            {" "}
+            <img src={scampiFries} height="75px" width="75px"></img>
+          </div>
           <div>
             {" "}
             <img src={schweff} height="75px" width="75px"></img>
