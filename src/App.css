@@ -160,3 +160,13 @@ section {
   font-size: 30px;
   color: #d84c73;
 }
+
+.shareButtons {
+  z-index: 100;
+  position: absolute;
+  top: 85%;
+}
+
+.shareButtons > * {
+  margin-right: 6px;
+}

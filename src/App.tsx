@@ -9,6 +9,19 @@ import fruity from "./assets/fruity.png";
 import tequila from "./assets/tequila.png";
 import schweff from "./assets/schweff.png";
 
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  InstapaperIcon,
+  InstapaperShareButton,
+  RedditIcon,
+  RedditShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+} from "react-share";
+
 import ReactGA from "react-ga";
 
 function App() {
@@ -119,6 +132,36 @@ function App() {
             {timeLeftTilTotalFuckery.minutes}M {timeLeftTilTotalFuckery.seconds}
             S
           </div>
+        </div>
+        <div className="shareButtons">
+          <FacebookShareButton
+            url={"https://pubcountdown.uk"}
+            quote={"Shit me we gonna go to the pub soon"}
+          >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+
+          <TwitterShareButton
+            url={"https://pubcountdown.uk"}
+            title={"Shit me we gonna go to the pub soon"}
+          >
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <WhatsappShareButton
+            url={"https://pubcountdown.uk"}
+            title={"Shit me we gonna go to the pub soon"}
+            separator=":: "
+          >
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+          <RedditShareButton
+            url={"https://pubcountdown.uk"}
+            title={"We gonna go to the pub soon"}
+            windowWidth={660}
+            windowHeight={460}
+          >
+            <RedditIcon size={32} round />
+          </RedditShareButton>
         </div>
       </section>
     </div>
